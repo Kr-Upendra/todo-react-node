@@ -13,7 +13,6 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(url, { email, password });
-      console.log(response);
       if (response.data?.status === "success") {
         alert("You are logged in now!");
         navigate("/all-todos");
