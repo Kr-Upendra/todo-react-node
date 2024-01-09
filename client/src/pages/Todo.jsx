@@ -31,11 +31,6 @@ export default function Todo() {
 
   return (
     <div className="todo">
-      <form>
-        <input type="text" name="title" placeholder="Title" />
-        <input type="text" name="description" placeholder="Description" />
-        <button type="submit">Create</button>
-      </form>
       <div className="all">
         <h2>All Your Todos</h2>
         <div className="container">{todoEl}</div>
