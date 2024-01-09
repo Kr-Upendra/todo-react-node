@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Auth />} />
-            <Route path="/all-todos" element={<Todo />} />
+            <Route path="all-todos" element={<Todo />} />
           </Route>
         </Routes>
       </BrowserRouter>
