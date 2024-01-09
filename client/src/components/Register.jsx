@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-const url = "http://127.0.0.1:3001/api/user/register";
+const url = "https://todonode-3zc4.onrender.com/api/user/register";
 
 export default function Register() {
   const [username, setUsername] = useState("");

@@ -4,7 +4,7 @@ export default function SingleTodo({ id, title, description }) {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:3001/api/todo/${id}`
+        `https://todonode-3zc4.onrender.com/api/todo/${id}`
       );
       if (response.status === "ok") {
         window.reload();

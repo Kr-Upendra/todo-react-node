@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import SingleTodo from "../components/SignleTodo";
 import axios from "axios";
-const url = "http://127.0.0.1:3001/api/todo/";
+import CreateTodo from "../components/CreateTodo";
+const url = "https://todonode-3zc4.onrender.com/api/todo/";
 
 export default function Todo() {
   const [todos, setTodos] = useState([]);
@@ -31,6 +32,7 @@ export default function Todo() {
 
   return (
     <div className="todo">
+      <CreateTodo />
       <div className="all">
         <h2>All Your Todos</h2>
         <div className="container">{todoEl}</div>
