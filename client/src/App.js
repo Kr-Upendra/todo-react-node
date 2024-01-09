@@ -9,10 +9,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AppLayout />}>
-            <Route index element={<Auth />} />
-            <Route path="all-todos" element={<Todo />} />
-          </Route>
+          <Route index element={<Auth />} />
+          <Route path="all-todos" element={<Todo />} />
         </Routes>
       </BrowserRouter>
     </div>
