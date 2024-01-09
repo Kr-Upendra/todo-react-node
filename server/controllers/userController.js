@@ -19,7 +19,6 @@ const getAllUser = async (req, res) => {
 const registerUser = async (req, res, next) => {
   try {
     const { username, email, password } = req.body;
-    console.log({ username, email, password });
 
     if (!email || !password || !username)
       return res.status(400).json({
@@ -44,7 +43,6 @@ const registerUser = async (req, res, next) => {
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log({ email, password });
     if (!email || !password)
       return res.status(404).json({
         status: "fail",

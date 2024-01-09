@@ -4,10 +4,7 @@ import app from "./app.js";
 import mongoose from "mongoose";
 
 const port = process.env.PORT || 3000;
-const DB = `${process.env.DB_URI}`.replace(
-  "<password>",
-  process.env.DB_PASSWORD
-);
+const DB = process.env.DB_URI;
 
 mongoose
   .connect(DB)
